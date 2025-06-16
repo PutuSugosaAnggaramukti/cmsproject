@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   CMS Bank Bantul
+   Bank Bantul
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -48,7 +48,7 @@
 
       <!-- Modal footer -->
       <div class="modal-footer">
-        <a href="/"><button type="button" class="btn btn-secondary">Ya</button></a>
+        <a href="/login"><button type="button" class="btn btn-secondary">Ya</button></a>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
       </div>
     </div>
@@ -89,34 +89,42 @@
   </nav>
   <main class="flex flex-col md:flex-row px-4 py-4 gap-4">
    <!-- Left sidebar -->
-   <aside class="bg-gray-200 w-full md:w-48 p-3">
-    <ul class="list-disc list-inside text-xs sm:text-sm font-bold space-y-1">
-     <li>
-     <a href="">Informasi Rekening</a>
-     </li>
-     <li>
-     <a href="">Transfer</a>
-     </li>
-     <li>
-      <a href="">Transaksi Bulk</a>
-     </li>
-     <li>
-      <a href="">Pembayaran</a>
-     </li>
-     <li>
-      <a href="">Pembelian</a>
-     </li>
-     <li>
-      <a href="">Pesan</a>
-     </li>
-     <li>
-      <a href="">Data Saya</a>
-     </li>
-     <li>
-      <a href="">Informasi</a>
-     </li>
-     <li>
-      <a href="">Aktivitas Saya</a>
+   <aside class="bg-gray-200 p-3 w-full md:w-60 text-xs leading-tight">
+    <ul class="list-disc list-inside space-y-1">
+     <li class="font-bold">
+      Transfer
+      <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-xs font-normal">
+       <li>
+        <span class="text-blue-600">
+         Daftar Penerima
+        </span>
+       </li>
+       <li>
+        <span class="font-bold">
+         Transfer
+        </span>
+       </li>
+       <li>
+        <span class="text-blue-600">
+         Rekening Sendiri
+        </span>
+       </li>
+       <li>
+        <span class="text-blue-600">
+         Rekening lain
+        </span>
+       </li>
+       <li>
+        <span class="text-blue-600">
+         Transfer ATM Bersama atau Prima
+        </span>
+       </li>
+       <li>
+        <span class="text-blue-600">
+         SKN / RTGS
+        </span>
+       </li>
+      </ul>
      </li>
     </ul>
    </aside>

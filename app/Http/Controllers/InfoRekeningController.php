@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class InfoRekening extends Controller
+class InfoRekeningController extends Controller
 {
     function InfoRekeningPage()
     {
-        
+        return view('InfoRekening.index');
     }
 }

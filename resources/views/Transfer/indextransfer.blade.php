@@ -28,106 +28,86 @@
    </div>
   </header>
   <!-- User greeting and logout -->
-  <button class="flex items-center space-x-2 bg-sky-300 hover:bg-sky-400 text-sky-700 px-4 py-2 shadow-md text-sm font-medium" data-bs-toggle="modal" data-bs-target="#logoutModal" type="button">
-    <i class="fas fa-sign-out-alt">
-    </i>
-    <span>
-     Keluar
-    </span>
-   </button>
-  </div>
-  <!-- Modal Logout-->
-<div class="modal" id="logoutModal">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
+  <div class="flex flex-row py-2">
+            <div class="ms-3 me-1">Kiki | </div>
+            <a class="cursor-pointer text-red-500" data-bs-toggle="modal" data-bs-target="#logoutModal"><b>Keluar</b></a>
+        </div>
+        <!-- Modal Logout-->
+        <div class="modal" id="logoutModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
 
-      <!-- Modal body -->
-      <div class="modal-body">
-        <h1 class="font-bold text-black text-xl mb-10">Yakin ingin keluar?</h1>
-      </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1 class="font-bold text-black text-xl mb-10">Yakin ingin keluar?</h1>
+                </div>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <a href="/login"><button type="button" class="btn btn-secondary">Ya</button></a>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-      </div>
-    </div>
-  </div>
-</div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="/"><button type="button" class="btn btn-secondary">Ya</button></a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                </div>
+                </div>
+            </div>
+        </div>
+  
   
   <!-- Navigation bar -->
   <nav class="bg-[#00bfff]">
-   <ul class="flex flex-wrap text-xs sm:text-sm font-semibold text-white px-4">
-    <li class="py-2 px-3 cursor-pointer bg-[#0099e6]">
-     <a href="">Awal</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Informasi Rekening</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Transfer</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Transaksi Bulk</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Pembayaran</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Pembelian</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Data saya</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Informasi</a>
-    </li>
-    <li class="py-2 px-3 cursor-pointer hover:underline">
-     <a href="">Aktivitas Saya</a>
-    </li>
-   </ul>
-  </nav>
+        <ul class="flex flex-wrap text-xs sm:text-sm font-semibold text-white px-4">
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="/dashboard">Awal</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="/inforekening">Informasi Rekening</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer bg-[#0099e6] hover:bg-[#0099e6]">
+                <a href="/transfer">Transfer</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="">Transaksi Bulk</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="/pembayarantagihan">Pembayaran</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="">Pembelian</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="">Data saya</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="">Informasi</a>
+            </li>
+            <li class="py-2 px-3 cursor-pointer hover:bg-[#0099e6]">
+                <a href="">Aktivitas Saya</a>
+            </li>
+        </ul>
+    </nav>
   <main class="flex flex-col md:flex-row px-4 py-4 gap-4">
    <!-- Left sidebar -->
-   <aside class="bg-gray-200 p-3 w-full md:w-60 text-xs leading-tight">
-    <ul class="list-disc list-inside space-y-1">
-     <li class="font-bold">
-      Transfer
-      <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-xs font-normal">
-       <li>
-        <span class="text-blue-600">
-         Daftar Penerima
-        </span>
-       </li>
-       <li>
-        <span class="font-bold">
-         Transfer
-        </span>
-       </li>
-       <li>
-        <span class="text-blue-600">
-         Rekening Sendiri
-        </span>
-       </li>
-       <li>
-        <span class="text-blue-600">
-         Rekening lain
-        </span>
-       </li>
-       <li>
-        <span class="text-blue-600">
-         Transfer ATM Bersama atau Prima
-        </span>
-       </li>
-       <li>
-        <span class="text-blue-600">
-         SKN / RTGS
-        </span>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </aside>
+   <aside class="bg-gray-200 w-full md:w-60 p-3">
+                <ul class="list-disc list-inside text-xs sm:text-sm font-bold space-y-1">
+                    <li class="pl-2 py-1 bg-[#929397] rounded-md">
+                        <a href="">Transfer</a>
+                    </li>
+                    <li class="pl-2 py-1 ml-4 hover:bg-[#929397] rounded-md">
+                        <a href="">Daftar Penerima</a>
+                    </li>
+                    <li class="pl-2 py-1 ml-4 hover:bg-[#929397] rounded-md">
+                        <a href="">Rekening Sendiri</a>
+                    </li>
+                         <li class="pl-2 py-1 ml-4 hover:bg-[#929397] rounded-md">
+                        <a href="/transferreklain">Rekening Lain</a>
+                    </li>
+                         <li class="pl-2 py-1 ml-4 hover:bg-[#929397] rounded-md">
+                        <a href="/atmbersamaprima">Transfer ATM Bersama atau Prima</a>
+                    </li>
+                         <li class="pl-2 py-1 ml-4 hover:bg-[#929397] rounded-md">
+                        <a href="/transfersknrtgs">SKN/RTGS</a>
+                    </li>
+                </ul>
+            </aside>
    <!-- Right content area -->
    <section class="flex-1">
     <table class="w-full border border-gray-300 text-xs sm:text-sm">

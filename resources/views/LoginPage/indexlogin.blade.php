@@ -47,12 +47,25 @@
       Password
      </label>
      <input class="w-full mb-1 px-2 py-1 rounded text-xs border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-600" id="password" placeholder="Password" type="password"/>
-     <div class="mb-3 text-xs">
-      <i class="fa fa-eye"></i> Show
+     <div class="mb-3 text-xs" id="hide-show">
+      <i class="fa fa-eye cursor-pointer"></i> Show
      </div>
-     <a href="/dashboard"><button type="button" class="btn btn-primary w-full">Login</button></a>
+     <a href="/token"><button type="button" class="btn btn-primary w-full">Login</button></a>
     </form>
    </div>
   </main>
+  <script>
+    $("#hide-show").on("click", function(){
+      var pswd=$("#password");
+      if(pswd.attr("type")=="password"){
+        pswd.attr("type", "text")
+        $("#hide-show").html(`<i class="fa fa-eye-slash cursor-pointer"></i> hide`);
+      }
+      else if(pswd.attr("type")=="text"){
+        pswd.attr("type", "password")
+        $("#hide-show").html(`<i class="fa fa-eye cursor-pointer"></i> show`);
+      }
+    });
+  </script>
  </body>
 </html>

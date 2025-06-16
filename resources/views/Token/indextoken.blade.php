@@ -9,6 +9,13 @@
   </script>
     <link href="images/favicon.png" rel="icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
   <style>
    @import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
   </style>
@@ -19,14 +26,28 @@
    <img alt="" class="h-16 w-auto" height="70" src="images/logo_bb.png" width="180"/>
   </header>
   <!-- User bar -->
-  <div class="w-full bg-[#f0f0f0] text-black text-base px-4 py-1">
-   <span>
-    Kiki
-   </span>
-   <span class="text-red-600">
-    | Keluar
-   </span>
-  </div>
+  <div class="flex flex-row py-2">
+            <div class="ms-3 me-1">Kiki | </div>
+            <a class="cursor-pointer text-red-500" data-bs-toggle="modal" data-bs-target="#logoutModal"><b>Keluar</b></a>
+        </div>
+        <!-- Modal Logout-->
+        <div class="modal" id="logoutModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1 class="font-bold text-black text-xl mb-10">Yakin ingin keluar?</h1>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="/"><button type="button" class="btn btn-secondary">Ya</button></a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                </div>
+                </div>
+            </div>
+        </div>
   <!-- Main content container -->
   <main class="w-full flex justify-center mt-8 px-4">
    <section class="bg-[#e6e6e6] rounded-lg w-full max-w-lg p-6" style="min-height: 220px">
@@ -65,9 +86,9 @@
       Masukan mPassCode Anda
      </label>
      <input class="border border-gray-300 rounded px-2 py-1 w-40 mb-3" id="mPassCode" name="mPassCode" placeholder="mPassCode" type="text"/>
-     <button class="bg-[#00ff00] text-black text-xs font-bold px-3 py-1 rounded" type="submit">
+    <a href="/dashboard"><button type="button" class="btn btn-primary bg-green w-full">
       Kirim
-     </button>
+     </button></a>
     </form>
    </section>
   </main>
